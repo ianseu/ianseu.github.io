@@ -1,0 +1,36 @@
+body {
+    background-color: #c5c5c5;
+}
+
+.terminal {
+    background-color: #000000;
+    color: #fff;
+    font-family: monospace;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    position: absolute;
+    top: 30%; 
+    left: 50%; 
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.terminal-text {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1em;
+    background-color: #fff;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
